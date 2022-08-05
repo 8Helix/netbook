@@ -1,0 +1,83 @@
+.footer {
+  &__info {
+    height: 52.1vh;
+    background-color: $black-light;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__box {
+      color: #fff;
+      height: 38.6vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__box:last-child {
+      margin-left: 4.2vw;
+    }
+
+    &__title {
+      font-family: $HelveticaNeue;
+      font-size: 2.4rem;
+      margin-bottom: 4.4vh;
+    }
+
+    &__item {
+      list-style: none;
+      font-family: $HelveticaNeue;
+      font-size: 1.6rem;
+      margin-bottom: 4vh;
+      cursor: pointer;
+    }
+  }
+
+  &__copyright {
+    height: 12.8vh;
+    background-color: $black-dark;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logos {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  &__paragraph {
+    font-family: Helvetica;
+    font-size: 1.4rem;
+    color: $grey-6;
+  }
+}
+
+.email {
+  position: relative;
+
+  & input {
+    width: 23.5vw;
+    height: 6.4vh;
+    border: 1px solid #fff;
+    border-radius: 1.2rem;
+    padding: 0 2.4rem;
+    background-color: $black-light;
+    color: #fff;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    border: none;
+    border-radius: 1.2rem;
+    height: 6.4vh;
+    padding: 0 2.4rem;
+    background-color: #fff;
+    right: 0;
+  }
+}

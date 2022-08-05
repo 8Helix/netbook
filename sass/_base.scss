@@ -1,0 +1,104 @@
+@import "variables/colors";
+@import "variables/fonts";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: 900px) {
+    font-size: 50%;
+  }
+
+  @media only screen and (min-width: 1800px) {
+    font-size: 75%;
+  }
+
+  overflow-x: none;
+}
+
+.container {
+  padding: 0 9.3vw;
+}
+
+.buttons {
+  margin-top: 5.2vh;
+  display: flex;
+  gap: 1.4vw;
+}
+
+.button {
+  width: 11.2vw;
+  height: 8.3vh;
+  border: none;
+  border-radius: 1.4rem;
+  font-size: 1.4rem;
+  font-family: Helvetica;
+  cursor: pointer;
+}
+
+.blue-button {
+  color: #fff;
+  background-color: $blue;
+}
+
+.light-button {
+  color: $blue;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba($color: $blue, $alpha: 0.5);
+}
+
+.heading-1 {
+  margin-bottom: 2.7vh;
+  font-size: 5.6rem;
+  font-family: $HelveticaNeue;
+  color: $dark-blue;
+}
+
+.heading-3 {
+  font-size: 1.8rem;
+  font-family: $HelveticaNeue;
+  color: $blue;
+}
+
+.heading-2 {
+  font-size: 3.6rem;
+  font-family: $HelveticaNeue;
+  color: $dark-blue;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  color: $grey;
+  font-family: Helvetica;
+}
+
+.paragraph-big {
+  font-family: $HelveticaNeue;
+  font-size: 2.4rem;
+  color: $dark-blue-2;
+}
+
+.mh1-m {
+  margin-bottom: 2rem;
+}
+
+.mh3-b {
+  margin-bottom: 1.2rem;
+}
+
+.mh3-s {
+  margin-bottom: 5px;
+}
+
+.mh1-b {
+  margin-bottom: 2.7rem;
+}

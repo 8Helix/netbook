@@ -1,0 +1,32 @@
+.connect {
+  padding-top: 4.6vh;
+  background-color: $light-blue-1;
+  display: flex;
+  align-items: center;
+
+  &__text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    &-imgs {
+      width: 10vw;
+      height: 6.9vh;
+      display: flex;
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__img-box {
+    align-self: flex-end;
+    flex: 1;
+    display: flex;
+
+    & img {
+      width: 100%;
+    }
+  }
+}

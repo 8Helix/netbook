@@ -1,0 +1,53 @@
+.news {
+  padding-top: 15.8vh;
+  padding-bottom: 15.8vh;
+  text-align: center;
+
+  &__box {
+    margin-top: 10.3vh;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5.2vw;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-img {
+      width: 23.6vw;
+      height: 44.2vh;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        border-radius: 1.4rem;
+        object-fit: cover;
+      }
+    }
+
+    &-text {
+      margin-top: 2.9rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.7rem;
+    }
+
+    &-line::before {
+      content: "";
+      display: inline-block;
+      height: 2px;
+      width: 3.9rem;
+      background-color: #ffaf2e;
+    }
+  }
+}
+
+.arrow {
+  margin-left: 1rem;
+}
+
+.blue {
+  color: $blue;
+}

@@ -1,0 +1,72 @@
+.members {
+  padding-top: 15.6vh;
+  padding-bottom: 16vh;
+  text-align: center;
+
+  &__box {
+    margin-top: 5.8vh;
+    display: flex;
+    gap: 2vw;
+  }
+
+  &__card {
+    flex: 25%;
+
+    @media only screen and (max-width: 900px) {
+      flex: 50%;
+    }
+
+    padding-top: 4vh;
+    padding-bottom: 3.7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.5vh;
+    border: 2px solid #f3f3f380;
+    border-radius: 1.4rem;
+
+    &-img {
+      width: 16.6rem;
+      height: 16.6rem;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23FFAF2EFF' stroke-width='7' stroke-dasharray='60%25%2c 13%25' stroke-dashoffset='86' stroke-linecap='butt'/%3e%3c/svg%3e");
+      border-radius: 100px;
+      position: relative;
+
+      &-check {
+        position: absolute;
+        bottom: -4px;
+      }
+    }
+
+    &:first-child {
+      box-shadow: 0px 34px 136px #7473801a;
+    }
+  }
+
+  &__buttons {
+    display: inline-block;
+    margin-top: 5.6vh;
+    min-width: 0;
+    padding: 0.8rem;
+    background-color: $light-blue-1;
+    border-radius: 1.4rem;
+  }
+
+  &__button {
+    border: none;
+    background-color: $light-blue-1;
+    border-radius: 1.4rem;
+    width: 10.4vw;
+    height: 7.5vh;
+  }
+}
+
+.active-button {
+  box-shadow: 0px 7px 44px #0048a857;
+  color: #fff;
+  background-color: $blue;
+}
